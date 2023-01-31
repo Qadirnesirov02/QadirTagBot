@@ -470,7 +470,7 @@ class LAN(object):
 
     elif LANGAUGE == "AZ":
 
-        BILDIRIM = "```📣 Yeni İsmarıc``` \n\n#YENI_ISTIFADƏÇİ **botu başlatdı!** \n\n🏷 isim: `{}` \n📮 istifadəçi ID: `{}` \n🧝🏻‍♂️ Profil linki: [{}](tg://user?id={})"
+        BILDIRIM = "```📣 Yeni İsmarıc``` \n\n#YENI_ISTIFADƏÇİ **botu başlatdı!** \n\n🏷 Adı: `{}` \n📮 istifadəçi ID: `{}` \n🧝🏻‍♂️ Profil linki: [{}](tg://user?id={})"
         GRUP_BILDIRIM = "```📣 Yeni İsmarıc``` \n\n#YENI_QRUP **botu başlatdı!** \n\n🏷 Qrupa əlavə edən: `{}` \n📮 Qrupa əlavə edən istifadəçi ID: `{}` \n🧝🏻‍♂️ Profil linki: [{}](tg://user?id={})\n Qrupun adı: {}\n Qrupun ID: {}\n Qrupun mesaj linki ( sadəcə açıq qruplar): [Buraya Toxun](https://t.me/c/{}/{})"
         SAHIBIME = "sahibimə"
         PRIVATE_BAN = "Məyusam, əngəlləndiniz! Bunun bir xəta olduğunu düşünürsünüzsə {} yazın."
@@ -566,7 +566,7 @@ async def handler(event):
 
 @client.on(events.callbackquery.CallbackQuery(data="help"))
 async def handler(event): 
-    await event.edit(f"[@Rahid_Tag_Bot](http://t.me/Rahid_Tag_Bot)-un '📚 Əmrlər' bölməsi ⤵\n\n\n•━━━━━━━━•••━━━━━━━━•\n🤖➪ /tag - 5-li tağ edər\n🤖➪ /etag - Emoji ilə tağ edər\n🤖➪ /stag - Sözlər ilə tağ edər\n🤖➪ /tektag - Tək-Tək tağ edər\n🤖➪ /usta - Usta tağ botuna aid tağ edər\n🤖➪ /admins - Adminləri tağ edər\n🤖➪ /cancel - Tağı dayandırar\n•━━━━━━━━•••━━━━━━━━•", buttons=(
+    await event.edit("🔮 İstifadə: /rahid\n📃 Açıqlama: Maraqlı sözlər ilə tağ edər.\n\n🔮 İstifadə: /tag\n📃 Açıqlama: 5-li tağ edər.\n\n🔮 İstifadə: /tektag\n📃 Açıqlama: Tək-Tək tağ edər.\n\n🔮 İstifadə: /etag\n📃 Açıqlama: Emoji ilə tağ edər.\n\n🔮 İstifadə: /btag\n📃 Açıqlama: Bayrağlar ilə tağ edər.\n\n🔮 İstifadə: /stag\n📃 Açıqlama: Sözlər ilə tağ edər\n\n🔮 İstifadə: /mafia\n📃 Açıqlama: Mafia rolları ilə tağ edər.\n\n🔮 İstifadə: /admins\n📃 Açıqlama: Adminləri tağ edər.\n\n🔮 İstifadə: /cancel\n📃 Açıqlama: Tağı dayandırar.", buttons=(
                  [Button.url('🔮 Blog', 'https://t.me/Rahid_44'),
                       Button.url('🇦🇿 Reklam', 'https://t.me/Qarsiliqli_Abune')],
                  [Button.inline(f"🔙 Geri", data="start")]
