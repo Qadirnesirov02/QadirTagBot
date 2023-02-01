@@ -535,7 +535,7 @@ async def start(event):
      await event.reply(f"👋 Salam mən qrupunuzdakı bütün üzvləri tağ edə bilərəm😇\n\n💁🏻 Ətraflı məlumat üçün '📚 Əmrlər' bölməsinə daxil olun", buttons=(
                      [Button.url('➕ Qrupa Əlavə Et ➕','http://t.me/RahidRobot?startgroup=a')],
                      [Button.inline(f"📚 Əmrlər", data="help")],
-                     Button.inline(f"👨🏻‍💻 Sahib Əmrləri", data="reklam")],
+                     Button.inline(f"👨🏻‍💻 Sahib Əmrləri"), data="reklam")],
                      [Button.url('🔮 Blog', 'https://t.me/Rahid_44'),
                       Button.url('🇦🇿 Reklam', 'https://t.me/Qarsiliqli_Abune')],
                     ),
