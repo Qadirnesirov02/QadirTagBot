@@ -17,7 +17,7 @@ app = Client(
 async def hg(bot: Client, msg: Message):
     for new_user in msg.new_chat_members:
         if str(new_user.id) == str(Config.OWNER_ID):
-            await msg.reply('Sahibim indi qrupa qoşuldu😍\nxoş gəldin aramıza Sahibim, Necəsən?🥰')
+            await msg.reply('[@RahidRobot](http://t.me/RahidRobot)-un Sahibi indicə qrupa qoşuldu, Xoş gəldin🥰')
 
             buttons = [[InlineKeyboardButton("➕ Qrupa Əlavə Et ➕",url="http://t.me/Rahid_Tag_Bot?startgroup=a"),
                     InlineKeyboardButton("👨🏻‍💻 Bot Sahibi", url="https://t.me/Rahid_7"),
