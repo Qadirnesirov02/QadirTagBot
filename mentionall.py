@@ -535,7 +535,7 @@ async def start(event):
      await event.reply(f"👋 Salam mən qrupunuzdakı bütün üzvləri tağ edə bilərəm😇\n💁🏻 Ətraflı məlumat üçün 📚 Əmrlər bölməsinə daxil olun.", buttons=(
                      [Button.url('➕ Qrupa Əlavə Et ➕','http://t.me/RahidRobot?startgroup=a')],
                [Button.inline(f"📚 Əmrlər", data="help"),
-                Button.inline(f"👨🏻‍💻 Sahib Əmrləri", data="reklam")],
+                Button.inline(f"📝 Sahib Əmrləri", data="reklam")],
                [Button.url('🔮 Blog', 'https://t.me/Rahid_44'),
                       Button.url('👨🏻‍💻 Bot Sahibi', 'https://t.me/Rahid_7')],
                     ),
@@ -559,7 +559,7 @@ async def handler(event):
      await event.edit(f"👋 Salam mən qrupunuzdakı bütün üzvləri tağ edə bilərəm😇\n💁🏻 Ətraflı məlumat üçün 📚 Əmrlər bölməsinə daxil olun", buttons=(
                      [Button.url('➕ Qrupa Əlavə Et ➕','http://t.me/RahidRobot?startgroup=a')],
                [Button.inline(f"📚 Əmrlər", data="help"),
-                Button.inline(f"👨🏻‍💻 Sahib Əmrləri", data="reklam")],
+                Button.inline(f"📝 Sahib Əmrləri", data="reklam")],
                [Button.url('🔮 Blog', 'https://t.me/Rahid_44'),
                       Button.url('👨🏻‍💻 Bot Sahibi', 'https://t.me/Rahid_7')],
                     ),
@@ -568,7 +568,7 @@ async def handler(event):
 
 @client.on(events.callbackquery.CallbackQuery(data="help"))
 async def handler(event):  
-    await event.edit(f"🔮 İstifadə: /rahid\n📃 Açıqlama: Maraqlı sözlər ilə tağ edər.\n\n🔮 İstifadə: /tag\n📃 Açıqlama: 5-li tağ edər.\n\n🔮 İstifadə: /tektag\n📃 Açıqlama: Tək-Tək tağ edər.\n\n🔮 İstifadə: /etag\n📃 Açıqlama: Emoji ilə tağ edər.\n\n🔮 İstifadə: /btag\n📃 Açıqlama: Bayrağlar ilə tağ edər.\n\n🔮 İstifadə: /stag\n📃 Açıqlama: Sözlər ilə tağ edər\n\n🔮 İstifadə: /mafia\n📃 Açıqlama: Mafia rolları ilə tağ edər.\n\n🔮 İstifadə: /admins\n📃 Açıqlama: Adminləri tağ edər.\n\n🔮 İstifadə: /cancel\n📃 Açıqlama: Tağı dayandırar.**", buttons=(
+    await event.edit(f"🔮 İstifadə: /rahid\n📃 Açıqlama: Maraqlı sözlər ilə tağ edər.\n\n🔮 İstifadə: /tag\n📃 Açıqlama: 5-li tağ edər.\n\n🔮 İstifadə: /tektag\n📃 Açıqlama: Tək-Tək tağ edər.\n\n🔮 İstifadə: /etag\n📃 Açıqlama: Emoji ilə tağ edər.\n\n🔮 İstifadə: /btag\n📃 Açıqlama: Bayrağlar ilə tağ edər.\n\n🔮 İstifadə: /stag\n📃 Açıqlama: Sözlər ilə tağ edər\n\n🔮 İstifadə: /mafia\n📃 Açıqlama: Mafia rolları ilə tağ edər.\n\n🔮 İstifadə: /admins\n📃 Açıqlama: Adminləri tağ edər.\n\n🔮 İstifadə: /cancel\n📃 Açıqlama: Tağı dayandırar.", buttons=(
                [Button.url('🔮 Blog', 'https://t.me/Rahid_44'),
                       Button.url('🇦🇿 Reklam', 'https://t.me/Qarsiliqli_Abune')],
                [Button.inline(f"🔙 Geri", data="start")]
@@ -577,10 +577,10 @@ async def handler(event):
 
 @client.on(events.callbackquery.CallbackQuery(data="reklam"))
 async def handler(event):  
-    await event.edit(f"🔮 İstifadə: /stats\n📃 Açıqlama: Botun məlumatları göstərir.\n\n🔮 İstifadə: /reklam\n📃 Açıqlama: Yayım etmək.\n\n🔮 İstifadə: /block\n📃 Açıqlama: İstifadəçi blok etmək.\n\n🔮 İstifadə: /unblock\n📃 Açıqlama: İstifadəçi bloku qaldırmaq.\n\n🔮 İstifadə: /blocklist\n📃 Açıqlama: Blok siyahısı göstərir.\n\n🔮 İstifadə: /delcmd\n📃 Açıqlama: (on - off) - Komanda silmə funksiyası.\n\n🔮 İstifadə: /offline\n📃 Açıqlama: Botun işlək olduğunu göstərir.**", buttons=(
-         [Button.url('🔮 Blog', 'https://t.me/Rahid_44')],
-               [Button.url('🇦🇿 Reklam', 'https://t.me/Qarsiliqli_Abune'),
-                      Button.url('👨🏻‍💻 Bot Sahibi', 'https://t.me/Rahid_7')],
+    await event.edit(f"🔮 İstifadə: /stats\n📃 Açıqlama: Botun məlumatları göstərir.\n\n🔮 İstifadə: /reklam\n📃 Açıqlama: Yayım etmək.\n\n🔮 İstifadə: /block\n📃 Açıqlama: İstifadəçi blok etmək.\n\n🔮 İstifadə: /unblock\n📃 Açıqlama: İstifadəçi bloku qaldırmaq.\n\n🔮 İstifadə: /blocklist\n📃 Açıqlama: Blok siyahısı göstərir.\n\n🔮 İstifadə: /delcmd\n📃 Açıqlama: (on - off) - Komanda silmə funksiyası.\n\n🔮 İstifadə: /offline\n📃 Açıqlama: Botun işlək olduğunu göstərir.", buttons=(
+         [Button.url('👨🏻‍💻 Bot Sahibi', 'https://t.me/Rahid_7')],
+               [Button.url('🔮 Blog', 'https://t.me/Rahid_44'),
+                      Button.url('🇦🇿 Reklam', 'https://t.me/Qarsiliqli_Abune')],
                [Button.inline(f"🔙 Geri", data="start")]
                     ),
                     link_preview=False)
