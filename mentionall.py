@@ -542,45 +542,45 @@ async def start(event):
                     link_preview=False)
 
 
-
   if event.is_group:
-    return await client.send_message(event.chat_id, f"** [Rahid](http://t.me/RahidRobot)**", buttons=(
-                     [Button.url('💡 Bota Keç','https://t.me/RahidRobot?start=start')],
-               [Button.url('🔮 Blog', 'https://t.me/Rahid_44'),
-          Button.url('🇦🇿 Reklam', 'https://t.me/Qarsiliqli_Abune')],
+    return await client.send_message(event.chat_id, f" [Ədalət Tag Bot](http://t.me/edalettagbot)'un Əmrlər üçün?.Bot'a daxil olub.", buttons=(
+                     [Button.url('💡Bota Keç','https://t.me/edalettagbot?start=start')],
+               [Button.url('Sahib 👨‍💻', 'https://t.me/edalet_22'),
+          Button.url('Qrup💬', 'https://t.me/EdaletSup')],
                     ),
                     link_preview=False)
+
 
 
 @client.on(events.callbackquery.CallbackQuery(data="start"))
 async def handler(event):
     async for usr in client.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
-     await event.edit(f"👋 Salam mən qrupunuzdakı bütün üzvləri tağ edə bilərəm😇\n\n💁🏻 Ətraflı məlumat üçün '📚 Əmrlər' bölməsinə daxil olun", buttons=(
-                     [Button.url('➕ Qrupa Əlavə Et ➕','http://t.me/RahidRobot?startgroup=a')],
-               [Button.inline(f"📚 Əmrlər", data="help")],
-               Button.inline(f"👨🏻‍💻 Sahib Əmrləri", data="reklam")],
-               [Button.url('🔮 Blog', 'https://t.me/Rahid_44'),
-                      Button.url('🇦🇿 Reklam', 'https://t.me/Qarsiliqli_Abune')],
+     await event.edit(f"Salam\nMənim Adım [Ədalət Tag Bot](http://t.me/edalettagbot)-u.\nQurupunuz'daki  bütün üzvləri tağ etmək səlahiyyətinə sahibəm.\n\n🤖Ətraflı müəlumat üçün '📚Əmrlər' bölməsinə daxil olun.", buttons=(
+                     [Button.url('➕ Məni Qrupa əlavə et ➕','http://t.me/edalettagbot?startgroup=a')],
+               [Button.inline(f"📚 Əmrlər", data="help"),
+                Button.inline(f"📑 Təkliflər", data="reklam")],
+               [Button.url('Qrup💬', 'https://t.me/EdaletSup'),
+                      Button.url('Sahib 👨‍💻', 'https://t.me/edalet_22')],
                     ),
                     link_preview=False)
 
 
 @client.on(events.callbackquery.CallbackQuery(data="help"))
-async def handler(event): 
-    await event.edit("🔮 İstifadə: /rahid\n📃 Açıqlama: Maraqlı sözlər ilə tağ edər.\n\n🔮 İstifadə: /tag\n📃 Açıqlama: 5-li tağ edər.\n\n🔮 İstifadə: /tektag\n📃 Açıqlama: Tək-Tək tağ edər.\n\n🔮 İstifadə: /etag\n📃 Açıqlama: Emoji ilə tağ edər.\n\n🔮 İstifadə: /btag\n📃 Açıqlama: Bayrağlar ilə tağ edər.\n\n🔮 İstifadə: /stag\n📃 Açıqlama: Sözlər ilə tağ edər\n\n🔮 İstifadə: /mafia\n📃 Açıqlama: Mafia rolları ilə tağ edər.\n\n🔮 İstifadə: /admins\n📃 Açıqlama: Adminləri tağ edər.\n\n🔮 İstifadə: /cancel\n📃 Açıqlama: Tağı dayandırar.", buttons=(
-                 [Button.url('🔮 Blog', 'https://t.me/Rahid_44'),
-                      Button.url('🇦🇿 Reklam', 'https://t.me/Qarsiliqli_Abune')],
-                 [Button.inline(f"🔙 Geri", data="start")]
+async def handler(event):  
+    await event.edit(f"  [Ədalət Tag Bot](http://t.me/edalettagbot)-un Kömək '📚 Əmrlər' Bunlardır.⤵️\n\n\n•━━━━━━━━•••━━━━━━━━•\n➪ /tag <səbəb> - 5-li Tag Atışları.\n➪ /etag <səbəb> - Emoji ilə etiketlər.\n➪ /stag <səbəb> - Söz'lü Tag etiketlər.\n➪/btag- <səbəb> - bayrağlar ilə etiketlər.\n➪/mafia- <səbəb> - Mafia oyunun rolları ilə etiketlər.\n➪/adtag- <səbəb> - Marağlı adlar ilə etiket atar.\n➪/edalet- <səbəb> - Maraglı sözlər ilə tag eder. \n➪/tektag <səbəb> - Üzvləri Tək-Tək etiketlər.\n➪ /admins <səbəb> - İdarəçilər Tək-Tək etiketlər.\n➪ /cancel - Tag Ələməyi Dayandır.**\n•━━━━━━━━•••━━━━━━━━•", buttons=(
+               [Button.url('Qrup💬', 'https://t.me/EdaletSup'),
+                      Button.url('Sahib 👨‍💻', 'https://t.me/edalet_22')],
+               [Button.inline(f"🔙 Geri", data="start")]
                     ),
                     link_preview=False)
 
 @client.on(events.callbackquery.CallbackQuery(data="reklam"))
 async def handler(event):  
-    await event.edit("🔮 İstifadə: /stats\n📃 Açıqlama: Botun məlumatları göstərir.}n\n🔮 İstifadə: /reklam\n📃 Açıqlama: Yayım etmək.\n\n🔮 İstifadə: /block\n📃 Açıqlama: İstifadəçi blok etmək.\n\n🔮 İstifadə: /unblock\n📃 Açıqlama: İstifadəçi bloku qaldırmaq.\n\n🔮 İstifadə: /blocklist\n📃 Açıqlama: Blok siyahısı göstərir.\n\n🔮 İstifadə: /delcmd\n📃 Açıqlama: (on - off) - Komanda silmə funksiyası.\n\n🔮 İstifadə: /offline\n📃 Açıqlama: Botun işlək olduğunu göstərir.**", buttons=(
-         [Button.url('🔮 Blog', 'https://t.me/Rahid_44')],
-               [Button.url('🇦🇿 Reklam', 'https://t.me/Qarsiliqli_Abune'),
-                      Button.url('👨🏻‍💻 Bot Sahibi', 'https://t.me/Rahid_7')],
+    await event.edit(f"📌 [Ədalət Tag Bot](http://t.me/edalettagbot)-un & Təkliflər üçün sahib'lə əlaqə saxlaya bilərsiniz...**", buttons=(
+         [Button.url('🎉 Diyər botlar', 'https://t.me/Edaletproject')],
+               [Button.url('Qrup💬', 'https://t.me/EdaletSup'),
+                      Button.url('Sahib 👨‍💻', 'https://t.me/edalet_22')],
                [Button.inline(f"🔙 Geri", data="start")]
                     ),
                     link_preview=False)
