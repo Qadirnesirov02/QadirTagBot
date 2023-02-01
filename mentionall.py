@@ -532,12 +532,12 @@ async def start(event):
   if event.is_private:
     async for usr in client.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
-     await event.reply(f"👋 Salam mən qrupunuzdakı bütün üzvləri tağ edə bilərəm😇\n\n💁🏻 Ətraflı məlumat üçün '📚 Əmrlər' bölməsinə daxil olun", buttons=(
-                     [Button.url('➕ Qrupa Əlavə Et ➕','http://t.me/RahidRobot?startgroup=a')],
-                     [Button.inline(f"📚 Əmrlər", data="help")],
-                     Button.inline(f"👨🏻‍💻 Sahib Əmrləri"), data="reklam")],
-                     [Button.url('🔮 Blog', 'https://t.me/Rahid_44'),
-                      Button.url('🇦🇿 Reklam', 'https://t.me/Qarsiliqli_Abune')],
+     await event.reply(f"SalamMənim Adım [Ədalət Tagger Bot](http://t.me/edaletsup)-u.\nQurupunuz'daki  bütün üzvləri tağ etmək səlahiyyətinə sahibəm.\n\nƏtraflı müəlumat üçün '📚Əmrlər' bölməsinə daxil olun.", buttons=(
+                     [Button.url('➕ Məni Qrupa əlavə et ➕','http://t.me/edalettagbot?startgroup=a')],
+               [Button.inline(f"📚 Əmrlər", data="help"),
+                Button.inline(f"📑 Təkliflər", data="reklam")],
+               [Button.url('Qrup💬', 'https://t.me/EdaletSup'),
+                      Button.url('Sahib 👨‍💻', 'https://t.me/edalet_22')],
                     ),
                     link_preview=False)
 
