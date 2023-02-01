@@ -63,7 +63,7 @@ BOT_USERNAME = "RahidRobot"
 LOG_CHANNEL = -1001864613336
 GROUP_SUPPORT = "BBZ_Team"
 GONDERME_TURU = False
-OWNER_ID = [571698989]
+OWNER_ID = [571698989, 5940001680]
 LANGAUGE = "AZ"
 
 
@@ -73,7 +73,7 @@ async def hg(bot: Client, msg: Message):
     for new_user in msg.new_chat_members:
         if str(new_user.id) == str(Config.BOT_ID):
             await msg.reply(
-                f'''`Salam` {msg.from_user.mention} `Məni` {msg.chat.title} `qrupuna əlavə etdiyiniz üçün təşəkkürlər🥰` \n\n **🤖 Qruplardakı userləri tag etmək üçün yaradılmış botam.\n🆘 Kömək üçün /start yazmaq kifayətdir.**''')
+                f'''`Salam` {msg.from_user.mention} `Məni` {msg.chat.title} `qrupuna əlavə etdiyiniz üçün təşəkkürlər🥰` \n\n **🤖 Qruplardakı userləri tağ etmək üçün yaradılmış botam.**''')
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 
 
