@@ -1,1 +1,1 @@
-worker: python3 mentionall.py
+worker: bash start
