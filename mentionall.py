@@ -59,7 +59,7 @@ app = Client(":memory:", api_id, api_hash, bot_token=bot_token)
 ############## DEĞİŞKENLER ##############
 
 DATABASE_URL = "mongodb+srv://Rahidtagbot:Rahidtagbot31@cluster0.m3kqvyk.mongodb.net/?retryWrites=true&w=majority"
-BOT_USERNAME = "Rahid_Tag_Bot"
+BOT_USERNAME = "RahidRobot"
 LOG_CHANNEL = -1001864613336
 GROUP_SUPPORT = "BBZ_Team"
 GONDERME_TURU = False
@@ -471,7 +471,7 @@ class LAN(object):
     elif LANGAUGE == "AZ":
 
         BILDIRIM = "```📣 Yeni İsmarıc``` \n\n#YENI_ISTIFADƏÇİ **botu başlatdı!** \n\n🏷 Adı: `{}` \n📮 istifadəçi ID: `{}` \n🧝🏻‍♂️ Profil linki: [{}](tg://user?id={})"
-        GRUP_BILDIRIM = "```📣 Yeni İsmarıc``` \n\n#YENI_QRUP **botu başlatdı!** \n\n🏷 Qrupa əlavə edən: `{}` \n📮 Qrupa əlavə edən istifadəçi ID: `{}` \n🧝🏻‍♂️ Profil linki: [{}](tg://user?id={})\n Qrupun adı: {}\n Qrupun ID: {}\n Qrupun mesaj linki ( sadəcə açıq qruplar): [Buraya Toxun](https://t.me/c/{}/{})"
+        GRUP_BILDIRIM = "```📣 Yeni İsmarıc``` \n\n#YENI_QRUP **botu başlatdı!** \n\n🏷 Qrupa əlavə edən: `{}` \n📮 Qrupa əlavə edən istifadəçi ID: `{}` \n🧝🏻‍♂️ Profil linki: [{}](tg://user?id={})\n Qrupun Adı: {}\n Qrupun ID: {}\n Qrupun mesaj linki ( sadəcə açıq qruplar): [Buraya Toxun](https://t.me/c/{}/{})"
         SAHIBIME = "sahibimə"
         PRIVATE_BAN = "Məyusam, əngəlləndiniz! Bunun bir xəta olduğunu düşünürsünüzsə {} yazın."
         GROUP_BAN = "Məyusam, qrupunuz qara siyahıya əlavə olundu! Artıq burada qala bilmərəm! Bunun bir xəta olduğunu düşünürsünüzsə {} yazın.'"
@@ -481,7 +481,7 @@ class LAN(object):
         BROADCAST_STARTED = "```📤 Reklam yayımı başladı! Bitəndə mesaj göndərəcəm."
         BROADCAST_STOPPED = "✅ ```Reklam yayımı uğurla tamamlandı.``` \n\n**Bu qədər vaxtda tamamlandı** `{}` \n\n**Ümumi istifadəçilər:** `{}` \n\n**Ümumi göndərmə cəhdləri:** `{}` \n\n**Uğurla göndərilən:** `{}` \n\n**Ümumi xəta:** `{}`"
         STATS_STARTED = "{} **Zəhmət olmasa gözləyin, bilgiləri gətirirəm!**"
-        STATS = """**@{} Məlumatları**\n\n**İstifadəçiləri;**\n» Ümumi söhbətlər: `{}`\n» Ümumi qruplar: `{}`\n» Ümumi PM's: `{}`\n\n**Disk İstifadəsi;**\n» Disk'in Sahəsi: `{}`\n» İstifadə edilən: `{}({}%)`\n» Boş qalan: `{}`\n\n**🎛 Ən yüksək istifadə dəyərləri;**\n» CPU: `{}%`\n» RAM: `{}%`\n» Pyrogram: {}\n\n\n__• Blog @Rahid_44__"""
+        STATS = """**@{} Məlumatları**\n\n**İstifadəçiləri;**\n» Ümumi Söhbətlər: `{}`\n» Ümumi Qruplar: `{}`\n» Ümumi PM's: `{}`\n\n**Disk İstifadəsi;**\n» Disk'in Sahəsi: `{}`\n» İstifadə Edilən: `{}({}%)`\n» Boş Qalan: `{}`\n\n**🎛 Ən yüksək istifadə dəyərləri;**\n» CPU: `{}%`\n» RAM: `{}%`\n» Pyrogram: {}\n\n\n__• Blog @Rahid_44__"""
         BAN_REASON = "Bu səbəbdən qadağan olunduğun üçün @{} tərəfindən avtomatik olaraq yaradılmışdır"
         NEED_USER = "**Zəhmət olmasa istifadəçi ID'si verin.**"
         BANNED_GROUP = "🚷 **Qadağan olundu!\n\nQadağan edən:** {}\n**Qrup ID:** `{}` \n**Vaxt:** `{}` \n**Səbəb:** `{}`"
@@ -533,8 +533,9 @@ async def start(event):
     async for usr in client.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
      await event.reply(f"👋 Salam mən qrupunuzdakı bütün üzvləri tağ edə bilərəm😇\n\n💁🏻 Ətraflı məlumat üçün '📚 Əmrlər' bölməsinə daxil olun", buttons=(
-                     [Button.url('➕ Qrupa Əlavə Et ➕','http://t.me/Rahid_Tag_Bot?startgroup=a')],
+                     [Button.url('➕ Qrupa Əlavə Et ➕','http://t.me/RahidRobot?startgroup=a')],
                      [Button.inline(f"📚 Əmrlər", data="help")],
+                     Button.inline(f"👨🏻‍💻 Sahib Əmrləri", data="reklam")],
                      [Button.url('🔮 Blog', 'https://t.me/Rahid_44'),
                       Button.url('🇦🇿 Reklam', 'https://t.me/Qarsiliqli_Abune')],
                     ),
@@ -543,8 +544,8 @@ async def start(event):
 
 
   if event.is_group:
-    return await client.send_message(event.chat_id, f"** [Rahid](http://t.me/Rahid_Tag_Bot)**", buttons=(
-                     [Button.url('💡 Bota Keç','https://t.me/Rahid_Tag_Bot?start=start')],
+    return await client.send_message(event.chat_id, f"** [Rahid](http://t.me/RahidRobot)**", buttons=(
+                     [Button.url('💡 Bota Keç','https://t.me/RahidRobot?start=start')],
                [Button.url('🔮 Blog', 'https://t.me/Rahid_44'),
           Button.url('🇦🇿 Reklam', 'https://t.me/Qarsiliqli_Abune')],
                     ),
@@ -556,8 +557,9 @@ async def handler(event):
     async for usr in client.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
      await event.edit(f"👋 Salam mən qrupunuzdakı bütün üzvləri tağ edə bilərəm😇\n\n💁🏻 Ətraflı məlumat üçün '📚 Əmrlər' bölməsinə daxil olun", buttons=(
-                     [Button.url('➕ Qrupa Əlavə Et ➕','http://t.me/Rahid_Tag_Bot?startgroup=a')],
+                     [Button.url('➕ Qrupa Əlavə Et ➕','http://t.me/RahidRobot?startgroup=a')],
                [Button.inline(f"📚 Əmrlər", data="help")],
+               Button.inline(f"👨🏻‍💻 Sahib Əmrləri", data="reklam")],
                [Button.url('🔮 Blog', 'https://t.me/Rahid_44'),
                       Button.url('🇦🇿 Reklam', 'https://t.me/Qarsiliqli_Abune')],
                     ),
@@ -573,7 +575,15 @@ async def handler(event):
                     ),
                     link_preview=False)
 
-
+@client.on(events.callbackquery.CallbackQuery(data="reklam"))
+async def handler(event):  
+    await event.edit("🔮 İstifadə: /stats\n📃 Açıqlama: Botun məlumatları göstərir.}n\n🔮 İstifadə: /reklam\n📃 Açıqlama: Yayım etmək.\n\n🔮 İstifadə: /block\n📃 Açıqlama: İstifadəçi blok etmək.\n\n🔮 İstifadə: /unblock\n📃 Açıqlama: İstifadəçi bloku qaldırmaq.\n\n🔮 İstifadə: /blocklist\n📃 Açıqlama: Blok siyahısı göstərir.\n\n🔮 İstifadə: /delcmd\n📃 Açıqlama: (on - off) - Komanda silmə funksiyası.\n\n🔮 İstifadə: /offline\n📃 Açıqlama: Botun işlək olduğunu göstərir.**", buttons=(
+         [Button.url('🔮 Blog', 'https://t.me/Rahid_44')],
+               [Button.url('🇦🇿 Reklam', 'https://t.me/Qarsiliqli_Abune'),
+                      Button.url('👨🏻‍💻 Bot Sahibi', 'https://t.me/Rahid_7')],
+               [Button.inline(f"🔙 Geri", data="start")]
+                    ),
+                    link_preview=False)
 
 @client.on(events.NewMessage(pattern='^(?i)/cancel'))
 async def cancel(event):
@@ -1344,7 +1354,7 @@ async def handler(event):
 
 
 
-print(">> Bot işləyir narahat olmayın. @Rahid_7 Məlumat almaq üçün <<")
+print(">> Bot işləyir narahat olmayın.\nMəlumat almaq üçün @Rahid_7 <<")
 app.start()
 client.run_until_disconnected()
 
