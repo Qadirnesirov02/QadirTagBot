@@ -24,8 +24,8 @@ async def hg(bot: Client, msg: Message):
             await msg.reply('Sahibim indi qrupa qoşuldu😍\nxoş gəldin aramıza Sahibim, Necəsən?🥰')
 
             buttons = [[InlineKeyboardButton("➕ Qrupa Əlavə Et ➕",url="http://t.me/Rahid_Tag_Bot?startgroup=a"),
-                    InlineKeyboardButton("🙇🏻 Sahib", url="https://t.me/Rahid_7"),
-                    InlineKeyboardButton("🔮 Rəsmi", url="https://t.me/Rahid_44")]]
+                    InlineKeyboardButton("👨🏻‍💻 Bot Sahibi", url="https://t.me/Rahid_7"),
+                    InlineKeyboardButton("🔮 Blog", url="https://t.me/Rahid_44")]]
 
 
 
