@@ -1,4 +1,4 @@
-### Telegramda İdarə Botu 🤖
+### Telegram İdarə Botu 🇦🇿
 
 - 👨🏻‍💻 Bot Sahibi [Rahid](https://t.me/Rahid_7)
 
