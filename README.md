@@ -1,2 +1,5 @@
-### 🚀 Deploy to heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Rahid2003/TagFake)
+### Telegramda İdarə Botu 🤖
+
+- 👨🏻‍💻 Bot Sahibi [Rahid](https://t.me/Rahid_7)
+
+- 🔮 Kanalım [Blog](https://t.me/Rahid_44)
