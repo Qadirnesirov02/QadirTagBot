@@ -73,7 +73,7 @@ async def hg(bot: Client, msg: Message):
     for new_user in msg.new_chat_members:
         if str(new_user.id) == str(Config.BOT_ID):
             await msg.reply(
-                f'''`Salam` {msg.from_user.mention} `Məni` {msg.chat.title} `qrupuna əlavə etdiyiniz üçün təşəkkürlər🥰` \n\n **🤖 Qruplardakı userləri tağ etmək üçün yaradılmış botam.**''')
+                f'''Salam {msg.from_user.mention}\nMəni {msg.chat.title} qrupuna əlavə etdiyin üçün təşəkkürlər🥰❤️''')
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 
 
