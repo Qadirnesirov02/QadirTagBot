@@ -61,7 +61,7 @@ app = Client(":memory:", api_id, api_hash, bot_token=bot_token)
 DATABASE_URL = "mongodb+srv://Rahidtagbot:Rahidtagbot31@cluster0.m3kqvyk.mongodb.net/?retryWrites=true&w=majority"
 BOT_USERNAME = "RahidRobot"
 LOG_CHANNEL = -1001864613336
-GROUP_SUPPORT = "BBZ_Team"
+GROUP_SUPPORT = "Cenublar"
 GONDERME_TURU = False
 OWNER_ID = [571698989, 5940001680]
 LANGAUGE = "AZ"
