@@ -21,7 +21,7 @@ async def hg(bot: Client, msg: Message):
 
             buttons = [[InlineKeyboardButton("➕ Qrupa Əlavə Et ➕",url="http://t.me/Rahid_Tag_Bot?startgroup=a"),
                     InlineKeyboardButton("👨🏻‍💻 Bot Sahibi", url="https://t.me/Rahid_7"),
-                    InlineKeyboardButton("🔮 Blog", url="https://t.me/Rahid_44")]]
+                    InlineKeyboardButton("🔮 Kanal", url="https://t.me/Rahid_44")]]
 
 
 
