@@ -470,14 +470,14 @@ class LAN(object):
 
     elif LANGAUGE == "AZ":
 
-        BILDIRIM = "```🆕 Yeni İsmarıc``` \n\n#YENI_ISTIFADƏÇİ **bota start etdi.** \n\n👤 `{}` \n🆔 `{}` \n🔗 Profil linki: [{}](tg://user?id={})"
-        GRUP_BILDIRIM = "```🆕 Yeni İsmarıc``` \n\n#YENI_QRUP **bota start etdi.** \n\n👤 Qrupa əlavə edən: `{}` \n🆔 Qrupa əlavə edən istifadəçi ID: `{}` \n🔗 Profil linki: [{}](tg://user?id={})\n Qrupun Adı: {}\n Qrupun ID: {}\n Qrupun mesaj linki ( sadəcə açıq qruplar): [Buraya Toxun](https://t.me/c/{}/{})"
+        BILDIRIM = "**Yeni istifadəçi bota start etdi.** \n\n👤 `{}` \n🆔 `{}` \n🔗 [{}](tg://user?id={})"
+        GRUP_BILDIRIM = "**Yeni qrupdakı istifadəçi bota start etdi.** \n\n👤 `{}` \n🆔 `{}` \n🔗 [{}](tg://user?id={})\n Qrupun Adı: {}\n Qrupun ID: {}\n Qrupun mesaj linki ( sadəcə açıq qruplar): [Buraya Toxun](https://t.me/c/{}/{})"
         SAHIBIME = "sahibimə"
         PRIVATE_BAN = "Məyusam, əngəlləndiniz! Bunun bir xəta olduğunu düşünürsünüzsə {} yazın."
         GROUP_BAN = "Məyusam, qrupunuz qara siyahıya əlavə olundu! Artıq burada qala bilmərəm! Bunun bir xəta olduğunu düşünürsünüzsə {} yazın.'"
         NOT_ONLINE = "aktiv deyil"
         BOT_BLOCKED = "botu əngəlləyib"
-        USER_ID_FALSE = "istifadəçi ID'i yanlışdır."
+        USER_ID_FALSE = "istifadəçi ID'si yanlışdır."
         BROADCAST_STARTED = "```📤 Reklam yayımı başladı! Bitəndə mesaj göndərəcəm."
         BROADCAST_STOPPED = "✅ ```Reklam yayımı uğurla tamamlandı.``` \n\n**Bu qədər vaxtda tamamlandı** `{}` \n\n**Ümumi istifadəçilər:** `{}` \n\n**Ümumi göndərmə cəhdləri:** `{}` \n\n**Uğurla göndərilən:** `{}` \n\n**Ümumi xəta:** `{}`"
         STATS_STARTED = "{} **Zəhmət olmasa gözləyin, bilgiləri gətirirəm!**"
