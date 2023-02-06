@@ -470,8 +470,8 @@ class LAN(object):
 
     elif LANGAUGE == "AZ":
 
-        BILDIRIM = "**Yeni istifadəçi bota start etdi.** \n\n👤 `{}` \n🆔 `{}` \n🔗 [{}](tg://user?id={})"
-        GRUP_BILDIRIM = "**Yeni qrupdakı istifadəçi bota start etdi.** \n\n👤 `{}` \n🆔 `{}` \n🔗 [{}](tg://user?id={})\n Qrupun Adı: {}\n Qrupun ID: {}\n Qrupun mesaj linki ( sadəcə açıq qruplar): [Buraya Toxun](https://t.me/c/{}/{})"
+        BILDIRIM = "**Yeni istifadəçi bota start etdi** \n\n👤 `{}` \n🆔 `{}` \n🔗 [{}](tg://user?id={})"
+        GRUP_BILDIRIM = "**Yeni qrupdakı istifadəçi bota start etdi** \n\n👤 `{}` \n🆔 `{}` \n🔗 [{}](tg://user?id={})\n Qrupun Adı: {}\n Qrupun ID: {}\n Qrupun mesaj linki ( sadəcə açıq qruplar): [Buraya Toxun](https://t.me/c/{}/{})"
         SAHIBIME = "sahibimə"
         PRIVATE_BAN = "Məyusam, əngəlləndiniz! Bunun bir xəta olduğunu düşünürsünüzsə {} yazın."
         GROUP_BAN = "Məyusam, qrupunuz qara siyahıya əlavə olundu! Artıq burada qala bilmərəm! Bunun bir xəta olduğunu düşünürsünüzsə {} yazın.'"
