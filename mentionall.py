@@ -27,8 +27,25 @@ from pyrogram.errors import (
     UserIsBlocked,
 )
 
+DUR = False
+SORGU = None
+WSORGU = None
+WDUR = False
 
+GRUP = []
 
+MESSAGE = "Salam! {}, Əyləncə Dolu Qrupumuza Xoş Gəldin🥳! Qaydalara riayət etdikcə səndə favori userlərimizdən biri olacaqsan🤩! Əminəm ki Nümunəvi Userlərdən biri olacaqsan!🥰"
+
+@Client.on_message(filters.group & filters.new_chat_members)
+def welcome(client, message):
+ global WDUR
+ global WSORGU
+ WSORGU=True
+ for i in message.new_chat_members:
+  new_members = MENTION.format(i.first_name, i.id)
+  text = MESSAGE.format(new_members)
+  message.reply(text, disable_web_page_preview=True)
+  
 logging.basicConfig(
     level=logging.INFO,
     format='%(name)s - [%(levelname)s] - %(message)s'
