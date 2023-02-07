@@ -27,6 +27,8 @@ from pyrogram.errors import (
     UserIsBlocked,
 )
 
+from pyrogram.types import Message, Chat
+
 DUR = False
 SORGU = None
 WSORGU = None
