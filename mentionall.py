@@ -26,56 +26,6 @@ from pyrogram.errors import (
     PeerIdInvalid,
     UserIsBlocked,
 )
-
-# Bu repo edalet_22 tərəfindən yazılıb
-# Öz adına çıxaran peysərdi
-# Bu yazıları silmədən işlədin
-
-# t.me/RoBotlarimTg | YouTube: RoBotlarimTg | t.me/EdaletSup
-# t.me/aykhan_s | t.me/edalet_22
-# GitHub: EdaletRoBot
-
-
-
-from telethon import TelegramClient
-from telethon import events
-
-
-# Config məlumatları
-API_ID = 19485442
-API_HASH = "a03fcb372b3ec4e406b5d52f84b02e53"
-bot_token = "5394785524:AAEozSRqSyD2vVtvVPgGgYr8ffj9PwReL2E"
-
-# Telegram Client (Telethon)
-edalet = TelegramClient('edalet', API_ID, API_HASH).start(bot_token=bot_token)
-
-
-#@edalet_22 terefindən @RoBotlarimTg üçün yazilib silmədən istifadə edin
-@edalet.on(events.ChatAction)
-async def handler(event):
-    if event.user_joined:
-        await event.reply(random.choice(userjoin))
-
-
-@edalet.on(events.ChatAction)
-async def handler(event):
-    if event.user_left:
-        await event.reply("Əla Birdə gəlmə😒")
-
-userjoin = (
-
-    "Salam maraqlı söhbət qrupumuza xoş gəlmisiniz ə😍",
-    "Salam sizi burda görməyimizə çox şadıq🥰",
-    "Salam xoş gəlmisiniz gəlin oturun çay içək😍☕",
-    "Sizi burda görməyimə çox sevindim🥰",
-    "Xoş gəlmisən qrupun gözəli🤩",
-    "",
-)
-
-
-print(">> Bot işləyir narahat olmayın. @Rahid_7 Məlumat almaq üçün <<")
-edalet.run_until_disconnected()
-
   
 logging.basicConfig(
     level=logging.INFO,
