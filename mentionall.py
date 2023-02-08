@@ -60,7 +60,7 @@ async def handler(event):
 @edalet.on(events.ChatAction)
 async def handler(event):
     if event.user_left:
-        await event.reply("Əla Birdə gəlmə")
+        await event.reply("Əla birdə gəlmə!😒")
 
 userjoin = (
 
