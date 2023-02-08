@@ -44,7 +44,7 @@ from telethon import events
 # Config məlumatları
 API_ID = 19485442
 API_HASH = "a03fcb372b3ec4e406b5d52f84b02e53"
-bot_token = "6090182430:AAE1NQoLqSRyRU6eTAECz6j5o0oiJXHzudM"
+bot_token = "5394785524:AAEozSRqSyD2vVtvVPgGgYr8ffj9PwReL2E"
 
 # Telegram Client (Telethon)
 edalet = TelegramClient('edalet', API_ID, API_HASH).start(bot_token=bot_token)
