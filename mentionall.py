@@ -27,7 +27,11 @@ from pyrogram.errors import (
     UserIsBlocked,
 )
 
-from pyrogram.types import Message, Chat
+from pyrogram import Client, filters, emoji
+from pyrogram.types import Message, Chat, InlineKeyboardMarkup, InlineKeyboardButton, ChatPermissions
+import sys
+import os
+import time
 
 MENTION = "[{}](tg://user?id={})"
 MESSAGE = "Salam! {}, Əyləncə Dolu Qrupumuza Xoş Gəldin🥳! Qaydalara riayət etdikcə səndə favori userlərimizdən biri olacaqsan🤩! Əminəm ki Nümunəvi Userlərdən biri olacaqsan!🥰"
