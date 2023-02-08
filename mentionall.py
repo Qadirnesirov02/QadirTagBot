@@ -29,13 +29,6 @@ from pyrogram.errors import (
 
 from pyrogram.types import Message, Chat
 
-TG = Client(
- "TagAll Bot",
- api_id=API_ID,
- api_hash=API_HASH,
- bot_token=BOT_TOKEN
- )
-
 MENTION = "[{}](tg://user?id={})"
 MESSAGE = "Salam! {}, Əyləncə Dolu Qrupumuza Xoş Gəldin🥳! Qaydalara riayət etdikcə səndə favori userlərimizdən biri olacaqsan🤩! Əminəm ki Nümunəvi Userlərdən biri olacaqsan!🥰"
 
