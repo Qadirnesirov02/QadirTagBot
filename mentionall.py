@@ -70,8 +70,8 @@ userjoin = (
     "Salam xoş gəlmisən🙊",
     "Salam əleykum xoş gəldin",
     "Salam xoş gəldin, Tanış olaq?🙈",
-    "Salam xoş gəldin vətəndaş necəsən?🥰"
-)
+    "Salam xoş gəldin vətəndaş necəsən?🥰",
+    "Salam axır ki gəlib çıxdın 😇 sənin yoluvu çoxdandı gözləyirdik.👀 Bizimlə xoş zaman keçirəcəyinə əmin ola bilərsən.🥳")
 
 
 print(">> Bot işləyir narahat olmayın. @Rahid_7 Məlumat almaq üçün <<")
