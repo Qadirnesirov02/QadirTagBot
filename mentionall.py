@@ -29,14 +29,22 @@ from pyrogram.errors import (
 
 from pyrogram.types import Message, Chat
 
+TG = Client(
+ "TagAll Bot",
+ api_id=API_ID,
+ api_hash=API_HASH,
+ bot_token=BOT_TOKEN
+ )
+
+MENTION = "[{}](tg://user?id={})"
+MESSAGE = "Salam! {}, Əyləncə Dolu Qrupumuza Xoş Gəldin🥳! Qaydalara riayət etdikcə səndə favori userlərimizdən biri olacaqsan🤩! Əminəm ki Nümunəvi Userlərdən biri olacaqsan!🥰"
+
 DUR = False
 SORGU = None
 WSORGU = None
 WDUR = False
 
 GRUP = []
-
-MESSAGE = "Salam! {}, Əyləncə Dolu Qrupumuza Xoş Gəldin🥳! Qaydalara riayət etdikcə səndə favori userlərimizdən biri olacaqsan🤩! Əminəm ki Nümunəvi Userlərdən biri olacaqsan!🥰"
 
 @Client.on_message(filters.group & filters.new_chat_members)
 def welcome(client, message):
