@@ -26,30 +26,6 @@ from pyrogram.errors import (
     PeerIdInvalid,
     UserIsBlocked,
 )
-
-#@edalet_22 terefindən @RoBotlarimTg üçün yazilib silmədən istifadə edin
-@edalet.on(events.ChatAction)
-async def handler(event):
-    if event.user_joined:
-   ad = f"{usr.first_name}
-        await event.reply(random.choice(userjoin))
-
-
-@edalet.on(events.ChatAction)
-async def handler(event):
-    if event.user_left:
-    ad = f"{usr.first_name}      
-        await event.reply("Əla Birdə gəlmə😒")
-
-userjoin = (
-
-    "Salam xoş gəlmisiniz❤️",
-    "Salam əyləncə qrupumuza xoş gəlmisiniz😍",
-    "Səni burda görməyimə çoox şadam😍",
-    "Mehriban qrupumuza xoş gəldin😍",
-    "Xoş gəldin balam🥰",
-    "",
-)
   
 logging.basicConfig(
     level=logging.INFO,
