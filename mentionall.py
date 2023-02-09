@@ -27,58 +27,6 @@ from pyrogram.errors import (
     UserIsBlocked,
 )
   
-  # Bu repo edalet_22 tərəfindən yazılıb
-# Öz adına çıxaran peysərdi
-# Bu yazıları silmədən işlədin
-
-# t.me/RoBotlarimTg | YouTube: RoBotlarimTg | t.me/EdaletSup
-# t.me/aykhan_s | t.me/edalet_22
-# GitHub: EdaletRoBot
-
-
-
-from telethon import TelegramClient
-from telethon import events
-
-
-# Config məlumatları
-API_ID = 19485442
-API_HASH = "a03fcb372b3ec4e406b5d52f84b02e53"
-bot_token = "5394785524:AAEozSRqSyD2vVtvVPgGgYr8ffj9PwReL2E"
-
-# Telegram Client (Telethon)
-edalet = TelegramClient('edalet', API_ID, API_HASH).start(bot_token=bot_token)
-
-
-#@edalet_22 terefindən @RoBotlarimTg üçün yazilib silmədən istifadə edin
-@edalet.on(events.ChatAction)
-async def handler(event):
-    if event.user_joined:
-        await event.reply(random.choice(userjoin))
-
-
-@edalet.on(events.ChatAction)
-async def handler(event):
-    if event.user_left:
-        await event.reply("Əla birdə gəlmə!😒")
-
-userjoin = (
-
-    "Xoş gəldin😒",
-    "Salam xoş gəldin həmişə sən gələsən😍❤️",
-    "Xoş gəlmisiniz👀🙊",
-    "Salam xoş gəlmisən🙊",
-    "Salam əleykum xoş gəldin",
-    "Salam xoş gəldin, Tanış olaq?🙈",
-    "Salam xoş gəldin vətəndaş necəsən?🥰",
-    "Salam axır ki gəlib çıxdın 😇 sənin yoluvu çoxdandı gözləyirdik.👀 Bizimlə xoş zaman keçirəcəyinə əmin ola bilərsən.🥳",
-    "Salam! Qrupumuza xoş gəldiz. İnanırıq ki, burda keçirəcəyiniz dəqiqlər sizin üçün xoş və mənalı dəqiqələr olacaq🤗",
-    "Salam! Dostluğun, hörmətin və sayqının kəsişdiyi qrupumuzda sizi görmək bizim üçün çox xoş oldu😊 Xoş zamanlar keçirəcəyinizə əminik. Xoş gəldiz🥳")
-
-
-print(">> Bot işləyir narahat olmayın. @Rahid_7 Məlumat almaq üçün <<")
-edalet.run_until_disconnected()
-  
 logging.basicConfig(
     level=logging.INFO,
     format='%(name)s - [%(levelname)s] - %(message)s'
