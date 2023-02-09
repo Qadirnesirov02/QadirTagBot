@@ -71,7 +71,9 @@ userjoin = (
     "Salam əleykum xoş gəldin",
     "Salam xoş gəldin, Tanış olaq?🙈",
     "Salam xoş gəldin vətəndaş necəsən?🥰",
-    "Salam axır ki gəlib çıxdın 😇 sənin yoluvu çoxdandı gözləyirdik.👀 Bizimlə xoş zaman keçirəcəyinə əmin ola bilərsən.🥳")
+    "Salam axır ki gəlib çıxdın 😇 sənin yoluvu çoxdandı gözləyirdik.👀 Bizimlə xoş zaman keçirəcəyinə əmin ola bilərsən.🥳",
+    "Salam! Qrupumuza xoş gəldiz. İnanırıq ki, burda keçirəcəyiniz dəqiqlər sizin üçün xoş və mənalı dəqiqələr olacaq🤗",
+    "Salam! Dostluğun, hörmətin və sayqının kəsişdiyi qrupumuzda sizi görmək bizim üçün çox xoş oldu😊 Xoş zamanlar keçirəcəyinizə əminik. Xoş gəldiz🥳")
 
 
 print(">> Bot işləyir narahat olmayın. @Rahid_7 Məlumat almaq üçün <<")
