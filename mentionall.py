@@ -57,11 +57,11 @@ app = Client(":memory:", api_id, api_hash, bot_token=bot_token)
 ############## DEĞİŞKENLER ##############
 
 DATABASE_URL = "mongodb+srv://Rahidtagbot:Rahidtagbot31@cluster0.m3kqvyk.mongodb.net/?retryWrites=true&w=majority"
-BOT_USERNAME = "Rahid_Tag_Bot"
-LOG_CHANNEL = -1001864613336
-GROUP_SUPPORT = "Cenublar"
+BOT_USERNAME = "Qadir_Tager_bot"
+LOG_CHANNEL = -1001842770743
+GROUP_SUPPORT = "imperator"
 GONDERME_TURU = False
-OWNER_ID = [571698989, 5940001680]
+OWNER_ID = [5860341998, ]
 LANGAUGE = "AZ"
 
 
@@ -531,20 +531,20 @@ async def start(event):
     async for usr in client.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
      await event.reply(f"👋 Salam mən qrupunuzdakı bütün üzvləri tağ edə bilərəm😇\n\n💁🏻 Ətraflı məlumat üçün 📚 Əmrlər bölməsinə daxil olun.", buttons=(
-                     [Button.url('➕ Qrupa Əlavə Et ➕','http://t.me/Rahid_Tag_Bot?startgroup=a')],
+                     [Button.url('➕ Qrupa Əlavə Et ➕','http://t.me/Qadir_Tager_bot?startgroup=a')],
                [Button.inline(f"📚 Əmrlər", data="help"),
                 Button.inline(f"📝 Sahib Əmrləri", data="reklam")],
-               [Button.url('🔮 Kanal', 'https://t.me/Rahid_44'),
-                      Button.url('👨🏻‍💻 Bot Sahibi', 'https://t.me/Rahid_7')],
+               [Button.url('🔮 Kanal', 'https://t.me/biolande'),
+                      Button.url('👨🏻‍💻 Bot Sahibi', 'https://t.me/nesirovqadirofficiall')],
                     ),
                     link_preview=False)
 
 
   if event.is_group:
     return await client.send_message(event.chat_id, f"Botun istifadə qaydasını öyrənmək üçün bota keçin.", buttons=(
-                     [Button.url('🤖 Bota Keç','https://t.me/Rahid_Tag_Bot?start=start')],
-               [Button.url('🔮 Kanal', 'https://t.me/Rahid_44'),
-          Button.url('👨🏻‍💻 Bot Sahibi', 'https://t.me/Rahid_7')],
+                     [Button.url('🤖 Bota Keç','https://t.me/Qadir_Tager_bot?start=start')],
+               [Button.url('🔮 Kanal', 'https://t.me/biolande'),
+          Button.url('👨🏻‍💻 Bot Sahibi', 'https://t.me/nesirovqadirofficiall')],
                     ),
                     link_preview=False)
 
@@ -555,11 +555,11 @@ async def handler(event):
     async for usr in client.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
      await event.edit(f"👋 Salam mən qrupunuzdakı bütün üzvləri tağ edə bilərəm😇\n\n💁🏻 Ətraflı məlumat üçün 📚 Əmrlər bölməsinə daxil olun", buttons=(
-                     [Button.url('➕ Qrupa Əlavə Et ➕','http://t.me/Rahid_Tag_Bot?startgroup=a')],
+                     [Button.url('➕ Qrupa Əlavə Et ➕','http://t.me/Qadir_Tager_bot?startgroup=a')],
                [Button.inline(f"📚 Əmrlər", data="help"),
                 Button.inline(f"📝 Sahib Əmrləri", data="reklam")],
-               [Button.url('🔮 Kanal', 'https://t.me/Rahid_44'),
-                      Button.url('👨🏻‍💻 Bot Sahibi', 'https://t.me/Rahid_7')],
+               [Button.url('🔮 Kanal', 'https://t.me/biolande'),
+                      Button.url('👨🏻‍💻 Bot Sahibi', 'https://t.me/nesirovqadirofficiall')],
                     ),
                     link_preview=False)
 
@@ -567,8 +567,8 @@ async def handler(event):
 @client.on(events.callbackquery.CallbackQuery(data="help"))
 async def handler(event):  
     await event.edit(f"🔮 İstifadə: /rahid\n📃 Açıqlama: Maraqlı sözlər ilə tağ edər.\n\n🔮 İstifadə: /tag\n📃 Açıqlama: 5-li tağ edər.\n\n🔮 İstifadə: /tektag\n📃 Açıqlama: Tək-Tək tağ edər.\n\n🔮 İstifadə: /etag\n📃 Açıqlama: Emoji ilə tağ edər.\n\n🔮 İstifadə: /btag\n📃 Açıqlama: Bayrağlar ilə tağ edər.\n\n🔮 İstifadə: /stag\n📃 Açıqlama: Sözlər ilə tağ edər\n\n🔮 İstifadə: /mafia\n📃 Açıqlama: Mafia rolları ilə tağ edər.\n\n🔮 İstifadə: /admins\n📃 Açıqlama: Adminləri tağ edər.\n\n🔮 İstifadə: /cancel\n📃 Açıqlama: Tağı dayandırar.", buttons=(
-               [Button.url('🔮 Kanal', 'https://t.me/Rahid_44'),
-                      Button.url('🇦🇿 Reklam', 'https://t.me/Qarsiliqli_Abune')],
+               [Button.url('🔮 Kanal', 'https://t.me/biolande'),
+                      Button.url('🇦🇿 Reklam', 'https://t.me/imperator')],
                [Button.inline(f"🔙 Geri", data="start")]
                     ),
                     link_preview=False)
@@ -576,9 +576,9 @@ async def handler(event):
 @client.on(events.callbackquery.CallbackQuery(data="reklam"))
 async def handler(event):  
     await event.edit(f"🔮 İstifadə: /stats\n📃 Açıqlama: Botun məlumatları göstərir.\n\n🔮 İstifadə: /reklam\n📃 Açıqlama: Yayım etmək.\n\n🔮 İstifadə: /block\n📃 Açıqlama: İstifadəçi blok etmək.\n\n🔮 İstifadə: /unblock\n📃 Açıqlama: İstifadəçi bloku qaldırmaq.\n\n🔮 İstifadə: /blocklist\n📃 Açıqlama: Blok siyahısı göstərir.\n\n🔮 İstifadə: /delcmd\n📃 Açıqlama: (on - off) - Komanda silmə funksiyası.\n\n🔮 İstifadə: /offline\n📃 Açıqlama: Botun işlək olduğunu göstərir.", buttons=(
-         [Button.url('👨🏻‍💻 Bot Sahibi', 'https://t.me/Rahid_7')],
-               [Button.url('🔮 Kanal', 'https://t.me/Rahid_44'),
-                      Button.url('🇦🇿 Reklam', 'https://t.me/Qarsiliqli_Abune')],
+         [Button.url('👨🏻‍💻 Bot Sahibi', 'https://t.me/nesirovqadirofficiall')],
+               [Button.url('🔮 Kanal', 'https://t.me/biolande'),
+                      Button.url('🇦🇿 Reklam', 'https://t.me/imperator')],
                [Button.inline(f"🔙 Geri", data="start")]
                     ),
                     link_preview=False)
@@ -974,7 +974,7 @@ async def cancel(event):
   tekli_calisan.remove(event.chat_id)
 
   
-@client.on(events.NewMessage(pattern="^/rahid ?(.*)"))
+@client.on(events.NewMessage(pattern="^/qadir ?(.*)"))
 
 async def mentionall(event):
 
@@ -1336,8 +1336,8 @@ async def handler(event):
         return await event.reply("Sən mənim sahibim deyilsən!🙄")
     await event.reply('Bot Mükəmməl İşləyir ⚡',
          buttons=(
-               [Button.url('🔮 Kanal','https://t.me/Rahid_44'),
-               Button.url('🇦🇿 Reklam','https://t.me/Qarsiliqli_Abune')],
+               [Button.url('🔮 Kanal','https://t.me/biolande'),
+               Button.url('🇦🇿 Reklam','https://t.me/imperator')],
                     ),
                     link_preview=False)
 
@@ -1352,7 +1352,7 @@ async def handler(event):
 
 
 
-print(">> Bot işləyir narahat olmayın.\nMəlumat almaq üçün @Rahid_7 <<")
+print(">> Bot işləyir narahat olmayın.\nMəlumat almaq üçün @nesirovqadirofficiall <<")
 app.start()
 client.run_until_disconnected()
 
