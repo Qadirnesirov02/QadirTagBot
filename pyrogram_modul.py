@@ -19,9 +19,9 @@ async def hg(bot: Client, msg: Message):
         if str(new_user.id) == str(Config.OWNER_ID):
             await msg.reply('Sahibim indicə söhbətinizə qoşulub. Xoş gəldin🥰')
 
-            buttons = [[InlineKeyboardButton("➕ Qrupa Əlavə Et ➕",url="http://t.me/Rahid_Tag_Bot?startgroup=a"),
-                    InlineKeyboardButton("👨🏻‍💻 Bot Sahibi", url="https://t.me/Rahid_7"),
-                    InlineKeyboardButton("🔮 Kanal", url="https://t.me/Rahid_44")]]
+            buttons = [[InlineKeyboardButton("➕ Qrupa Əlavə Et ➕",url="http://t.me/Qadir_Tager_bot?startgroup=a"),
+                    InlineKeyboardButton("👨🏻‍💻 Bot Sahibi", url="https://t.me/nesirovqadirofficiall"),
+                    InlineKeyboardButton("🔮 Kanal", url="https://t.me/biolande")]]
 
 
 
