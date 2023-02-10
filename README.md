@@ -1,5 +1,5 @@
 ### Telegram Tağ Botu 🇦🇿
 
-- 👨🏻‍💻 Bot Sahibi [Rahid](https://t.me/Rahid_7)
-
-- 🔮 Kanal [Blog](https://t.me/Rahid_44)
+- 👨🏻‍💻 Bot Sahibi [Qadir](https://t.me/nesirovqadirofficiall)
+-
+- 🔮 Kanal [Biolande](https://t.me/biolande)
