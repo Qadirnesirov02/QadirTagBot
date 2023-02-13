@@ -1,1 +1,1 @@
-https://github.com/EdaletRoBot/Start-Help_RoBotlarimTg/blob/master/sahibtag.py
+https://github.com/Nəsirovqadir02/Start-Help_biolande/blob/master/sahibtag.py
